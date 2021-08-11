@@ -1,0 +1,10 @@
+C:\Users\cemal\source\repos\Kutuphaneprojem\Kutuphaneprojem\bin\Debug\Kutuphaneprojem.exe.config
+C:\Users\cemal\source\repos\Kutuphaneprojem\Kutuphaneprojem\bin\Debug\Kutuphaneprojem.exe
+C:\Users\cemal\source\repos\Kutuphaneprojem\Kutuphaneprojem\bin\Debug\Kutuphaneprojem.pdb
+C:\Users\cemal\source\repos\Kutuphaneprojem\Kutuphaneprojem\obj\Debug\Kutuphaneprojem.csproj.AssemblyReference.cache
+C:\Users\cemal\source\repos\Kutuphaneprojem\Kutuphaneprojem\obj\Debug\Kutuphaneprojem.Form1.resources
+C:\Users\cemal\source\repos\Kutuphaneprojem\Kutuphaneprojem\obj\Debug\Kutuphaneprojem.Properties.Resources.resources
+C:\Users\cemal\source\repos\Kutuphaneprojem\Kutuphaneprojem\obj\Debug\Kutuphaneprojem.csproj.GenerateResource.cache
+C:\Users\cemal\source\repos\Kutuphaneprojem\Kutuphaneprojem\obj\Debug\Kutuphaneprojem.csproj.CoreCompileInputs.cache
+C:\Users\cemal\source\repos\Kutuphaneprojem\Kutuphaneprojem\obj\Debug\Kutuphaneprojem.exe
+C:\Users\cemal\source\repos\Kutuphaneprojem\Kutuphaneprojem\obj\Debug\Kutuphaneprojem.pdb
