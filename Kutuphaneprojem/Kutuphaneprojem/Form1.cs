@@ -42,7 +42,7 @@ namespace Kutuphaneprojem
             com = new SqlCommand();
             con.Open();
             com.Connection=con;
-            com.CommandText = "Select * from kutuphane where kullaniciadi='" + textBox1.Text + "'And sifre='" + textBox2.Text + "'";
+            com.CommandText = "Select * from kayit where kullaniciadi='" + textBox1.Text + "'And sifre='" + textBox2.Text + "'";
             dr=com.ExecuteReader();
             if(dr.Read())
             {
@@ -62,7 +62,7 @@ namespace Kutuphaneprojem
                 if(baglan.State==ConnectionState.Closed)
                 {
                     baglan.Open();
-                    string kayit="insert into kutuphane (ad,soyad,kullaniciadi,sifre) values(@ad,@soyad,@kullaniciadi,@sifre)";
+                    string kayit="insert into kayit (ad,soyad,kullaniciadi,sifre) values(@ad,@soyad,@kullaniciadi,@sifre)";
                     SqlCommand komut = new SqlCommand(kayit,baglan);
                     komut.Parameters.AddWithValue("@ad", textBox3.Text);
                     komut.Parameters.AddWithValue("@soyad", textBox4.Text);
@@ -177,6 +177,30 @@ namespace Kutuphaneprojem
             kayitlarigetir();
             baglan.Close();
         }
-       
+
+        int i = 0;
+        private void button5_Click(object sender, EventArgs e)
+        {
+            baglan.Open();
+            string kayitguncelle = ("Update kitap set  kitapadi=@kitapadi,yazari=@yazari where id=@id");
+            SqlCommand komut = new SqlCommand(kayitguncelle, baglan);
+            komut.Parameters.AddWithValue("@kitapadi",textBox7.Text);
+            komut.Parameters.AddWithValue("@yazari",textBox8.Text);
+            komut.Parameters.AddWithValue("@id", dataGridView1.Rows[i].Cells[0].Value);
+            komut.ExecuteNonQuery();
+            MessageBox.Show("Kayıt güncellendi");
+            baglan.Close();
+            kayitlarigetir();
+
+
+        }
+
+        private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            i = e.RowIndex;
+            textBox7.Text = dataGridView1.Rows[i].Cells[1].Value.ToString();
+            textBox8.Text = dataGridView1.Rows[i].Cells[2].Value.ToString();
+
+        }
     }
 }
